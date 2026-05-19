@@ -19,77 +19,173 @@ padding:0;
 box-sizing:border-box;
 }
 
+:root{
+
+--bg:#f6efe7;
+--card:#ffffff;
+--soft:#faf6f1;
+--text:#3f3428;
+--line:#d9c6b0;
+--button:#6f5845;
+
+}
+
 body{
+
 font-family:Georgia,serif;
-background:#f6efe7;
-color:#3f3428;
-line-height:1.9;
-padding:40px 20px;
+
+background:var(--bg);
+
+color:var(--text);
+
+line-height:1.75;
+
+padding:25px 18px;
+
 }
 
 .container{
-max-width:900px;
+
+max-width:850px;
+
 margin:auto;
+
 background:white;
-padding:60px;
+
+padding:35px;
+
 border-radius:20px;
-box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+box-shadow:
+0 6px 20px rgba(0,0,0,.08);
+
 }
 
 h1{
+
 text-align:center;
-font-size:3rem;
-margin-bottom:15px;
+
+font-size:2.6rem;
+
+margin-bottom:8px;
+
 }
 
 .subtitle{
+
 text-align:center;
+
 font-style:italic;
+
 opacity:.8;
-margin-bottom:50px;
+
+margin-bottom:18px;
+
 }
 
-.author-box{
-background:#faf6f1;
-padding:40px;
-border-radius:16px;
-margin-top:25px;
-}
+.divider{
 
-p{
-font-size:1.08rem;
-margin-bottom:25px;
+width:80px;
+height:2px;
+
+background:var(--line);
+
+margin:18px auto;
+
 }
 
 .quote{
-font-style:italic;
-font-size:1.2rem;
-text-align:center;
-padding:30px;
-margin:40px 0;
-background:#faf6f1;
+
+background:var(--soft);
+
+padding:20px;
+
+border-left:4px solid var(--line);
+
 border-radius:12px;
+
+margin:18px 0;
+
+font-style:italic;
+
 }
 
-.navigation{
-margin-top:60px;
-display:flex;
-justify-content:space-between;
+.author-box{
+
+background:var(--soft);
+
+padding:25px;
+
+border-radius:16px;
+
+margin-top:18px;
+
 }
 
-.navigation a{
-text-decoration:none;
-color:white;
-background:#6f5845;
-padding:12px 24px;
-border-radius:30px;
+p{
+
+font-size:1.05rem;
+
+margin-bottom:18px;
+
 }
 
 .footer{
-margin-top:50px;
+
 text-align:center;
-font-style:italic;
+
+margin-top:25px;
+
+padding-top:18px;
+
+border-top:1px solid var(--line);
+
 opacity:.75;
+
+font-style:italic;
+
+}
+
+.navigation{
+
+display:flex;
+
+justify-content:space-between;
+
+gap:10px;
+
+margin-top:25px;
+
+}
+
+.navigation a{
+
+text-decoration:none;
+
+color:white;
+
+background:var(--button);
+
+padding:12px 22px;
+
+border-radius:30px;
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+padding:25px;
+
+}
+
+h1{
+
+font-size:2.1rem;
+
+}
+
 }
 
 </style>
@@ -100,16 +196,20 @@ opacity:.75;
 <div class="container">
 
 <h1>
+
 About the Author
+
 </h1>
 
 <p class="subtitle">
 
 Let Not Your Heart Be Troubled<br>
-Joey’s Journey<br>
+Joey's Journey<br>
 Bradley Hobbs
 
 </p>
+
+<div class="divider"></div>
 
 <div class="quote">
 
@@ -128,23 +228,23 @@ This journey was written from the perspective of someone who deeply cares for Jo
 </p>
 
 <p>
-Sometimes people travel paths that become painful. Sometimes hearts become troubled. Sometimes fear and uncertainty create moments where a person begins losing sight of peace. During those moments, a true friend does not walk away.
+Sometimes people travel painful roads. Sometimes hearts become troubled. Sometimes fear and uncertainty create moments where peace becomes difficult to see.
 </p>
 
 <p>
-A true friend keeps reaching. A true friend keeps praying. A true friend keeps extending a hand even during moments when advice goes unheard and difficult choices continue unfolding.
+A true friend keeps reaching. A true friend keeps praying. A true friend keeps extending a hand even when wisdom goes unheard and difficult choices continue unfolding.
 </p>
 
 <p>
-This story carries a quiet reminder that friendship is not built upon control or conditions. Friendship sometimes means taking the high road. Friendship means choosing love over frustration and compassion over disappointment.
+Friendship is not built upon conditions. Friendship sometimes means taking the high road. Friendship means choosing compassion and remaining present through difficult seasons.
 </p>
 
 <p>
-Joey's journey reflects more than emotional healing. Joey's journey reflects the kind of friendship that remains steady through storms. The kind that keeps believing, keeps caring, and keeps hoping for restoration.
+Joey's story reflects more than emotional healing. Joey's story reflects the kind of friendship that remains steady through storms. The kind that keeps believing, keeps caring, and keeps hoping.
 </p>
 
 <p>
-Through every page rests a simple truth. Some people enter life for a season. Some remain through every storm. Those rare friendships become reminders of the way Jesus reaches for people with patience, mercy, and unwavering love.
+Through every page rests a simple truth. Some people enter life for a season. Others remain through every storm. Those rare friendships become reminders of the way Jesus reaches with patience, mercy, and unwavering love.
 </p>
 
 </div>
