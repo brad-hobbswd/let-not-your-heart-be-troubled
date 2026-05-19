@@ -4,9 +4,9 @@ By Bradley Hobbs
 
 A story of friendship, surrender, trust, and discovering peace through Jesus.
 
-This project contains the complete website edition of *Let Not Your Heart Be Troubled: Joey's Journey*, a faith centered story that follows Joey through seasons of anxiety, emotional exhaustion, friendship, distance, and ultimately peace found through Jesus.
+This project contains the complete interactive website edition of *Let Not Your Heart Be Troubled: Joey's Journey*, a faith centered story following Joey through emotional exhaustion, friendship, distance, fear, surrender, and the peace that comes through trusting Jesus.
 
-Throughout the journey, Joey learns a life changing truth:
+Throughout the journey, Joey discovers a truth that slowly changes his heart:
 
 > "Let not your heart be troubled: ye believe in God, believe also in me."
 >
@@ -16,9 +16,17 @@ The story explores what happens when fear loosens its grip and trust begins taki
 
 ---
 
-## Website Reading Order
+## Read Online
 
-Readers move through the book using the following page flow:
+Live Website:
+
+ [oai_citation:0‡brad-hobbswd.github.io](https://brad-hobbswd.github.io/let-not-your-heart-be-troubled/?utm_source=chatgpt.com)
+
+Begin Joey's journey online through the complete reading experience.
+
+---
+
+## Website Reading Order
 
 Home  
 ↓  
@@ -47,6 +55,8 @@ Return Home
 ## Project Structure
 
 ```text
+let-not-your-heart-be-troubled/
+
 index.html
 contents.html
 introduction.html
