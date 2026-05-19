@@ -19,38 +19,69 @@ padding:0;
 box-sizing:border-box;
 }
 
+:root{
+
+--bg:#f6efe7;
+--card:#ffffff;
+--soft:#faf6f1;
+--text:#3f3428;
+--line:#d9c6b0;
+--button:#6f5845;
+
+}
+
 body{
+
 font-family:Georgia,serif;
-background:#f6efe7;
-color:#3f3428;
-line-height:2;
-padding:40px 20px;
+
+background:var(--bg);
+
+color:var(--text);
+
+line-height:1.75;
+
+padding:25px 18px;
+
 }
 
 .container{
-max-width:900px;
+
+max-width:850px;
+
 margin:auto;
+
 background:white;
-padding:60px;
+
+padding:35px;
+
 border-radius:20px;
+
 box-shadow:
-0 8px 30px rgba(0,0,0,.08);
+0 6px 20px rgba(0,0,0,.08);
+
 }
 
 .chapter-number{
 
 text-align:center;
+
 letter-spacing:3px;
+
 opacity:.7;
-margin-bottom:10px;
+
+font-size:.9rem;
+
+margin-bottom:6px;
 
 }
 
 h1{
 
 text-align:center;
-font-size:3rem;
-margin-bottom:40px;
+
+font-size:2.6rem;
+
+margin-bottom:12px;
 
 }
 
@@ -58,58 +89,92 @@ margin-bottom:40px;
 
 width:80px;
 height:2px;
-background:#d9c6b0;
-margin:0 auto 50px;
+
+background:var(--line);
+
+margin:18px auto 24px;
 
 }
 
 p{
 
-margin-bottom:28px;
-font-size:1.08rem;
+margin-bottom:18px;
+
+font-size:1.05rem;
 
 }
 
-.scripture{
+.quote{
 
-background:#faf6f1;
+background:var(--soft);
 
-padding:30px;
+padding:18px;
 
-border-radius:16px;
+border-left:4px solid var(--line);
+
+border-radius:12px;
+
+margin:18px 0;
 
 font-style:italic;
-
-text-align:center;
-
-margin:40px 0;
-
-}
-
-.navigation{
-
-display:flex;
-justify-content:space-between;
-margin-top:60px;
-
-}
-
-.navigation a{
-
-text-decoration:none;
-background:#6f5845;
-color:white;
-padding:12px 24px;
-border-radius:30px;
 
 }
 
 .footer{
 
 text-align:center;
-margin-top:50px;
-opacity:.7;
+
+margin-top:25px;
+
+padding-top:18px;
+
+border-top:1px solid var(--line);
+
+opacity:.75;
+
 font-style:italic;
+
+}
+
+.navigation{
+
+display:flex;
+
+justify-content:space-between;
+
+gap:10px;
+
+margin-top:25px;
+
+}
+
+.navigation a{
+
+text-decoration:none;
+
+background:var(--button);
+
+color:white;
+
+padding:12px 22px;
+
+border-radius:30px;
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+padding:25px;
+
+}
+
+h1{
+
+font-size:2.1rem;
+
+}
 
 }
 
@@ -143,14 +208,16 @@ Questions replayed repeatedly within his thoughts. Messages from Noelle and Dall
 </p>
 
 <p>
+
 Why does everyone feel farther away?
+
 </p>
 
 <p>
 Joey tightened his grip on the steering wheel and quietly repeated the verse that had followed him:
 </p>
 
-<div class="scripture">
+<div class="quote">
 
 "Let not your heart be troubled: ye believe in God, believe also in me."
 
@@ -173,12 +240,16 @@ Later that evening Anthony called through video chat from Canada.
 </p>
 
 <p>
+
 Anthony spoke carefully.
+
 </p>
 
-<p>
+<div class="quote">
+
 "Joey, while praying yesterday I saw hearts floating upward like lanterns. Every heart glowed differently, and one hand held every lantern safely together. I knew Jesus was showing me something."
-</p>
+
+</div>
 
 <p>
 Joey felt his chest tighten.
@@ -189,15 +260,21 @@ The image immediately reminded him of his own dream. Waves. Fear. Floating burde
 </p>
 
 <p>
+
 One lesson slowly began taking shape.
+
 </p>
 
 <p>
+
 Peace was never found through control.
+
 </p>
 
 <p>
+
 Peace grew through trust.
+
 </p>
 
 <div class="footer">
