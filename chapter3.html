@@ -19,84 +19,163 @@ padding:0;
 box-sizing:border-box;
 }
 
+:root{
+
+--bg:#f6efe7;
+--card:#ffffff;
+--soft:#faf6f1;
+--text:#3f3428;
+--line:#d9c6b0;
+--button:#6f5845;
+
+}
+
 body{
+
 font-family:Georgia,serif;
-background:#f6efe7;
-color:#3f3428;
-line-height:2;
-padding:40px 20px;
+
+background:var(--bg);
+
+color:var(--text);
+
+line-height:1.75;
+
+padding:25px 18px;
+
 }
 
 .container{
-max-width:900px;
+
+max-width:850px;
+
 margin:auto;
+
 background:white;
-padding:60px;
+
+padding:35px;
+
 border-radius:20px;
+
 box-shadow:
-0 8px 30px rgba(0,0,0,.08);
+0 6px 20px rgba(0,0,0,.08);
+
 }
 
 .chapter-number{
+
 text-align:center;
+
 letter-spacing:3px;
+
 opacity:.7;
-margin-bottom:10px;
+
+font-size:.9rem;
+
+margin-bottom:6px;
+
 }
 
 h1{
+
 text-align:center;
-font-size:3rem;
-margin-bottom:40px;
+
+font-size:2.6rem;
+
+margin-bottom:12px;
+
 }
 
 .divider{
+
 width:80px;
 height:2px;
-background:#d9c6b0;
-margin:0 auto 50px;
+
+background:var(--line);
+
+margin:18px auto 24px;
+
 }
 
 p{
-margin-bottom:28px;
-font-size:1.08rem;
+
+margin-bottom:18px;
+
+font-size:1.05rem;
+
 }
 
 .quote{
 
-background:#faf6f1;
+background:var(--soft);
 
-padding:35px;
+padding:18px;
 
-border-radius:16px;
+border-left:4px solid var(--line);
 
-margin:40px 0;
+border-radius:12px;
+
+margin:18px 0;
 
 font-style:italic;
 
+}
+
+.footer{
+
 text-align:center;
+
+margin-top:25px;
+
+padding-top:18px;
+
+border-top:1px solid var(--line);
+
+opacity:.75;
+
+font-style:italic;
 
 }
 
 .navigation{
+
 display:flex;
+
 justify-content:space-between;
-margin-top:60px;
+
+gap:10px;
+
+margin-top:25px;
+
 }
 
 .navigation a{
+
 text-decoration:none;
-background:#6f5845;
+
+background:var(--button);
+
 color:white;
-padding:12px 24px;
+
+padding:12px 22px;
+
 border-radius:30px;
+
 }
 
-.footer{
-text-align:center;
-margin-top:50px;
-opacity:.7;
-font-style:italic;
+@media(max-width:768px){
+
+.container{
+
+padding:25px;
+
+}
+
+h1{
+
+font-size:2.1rem;
+
+}
+
 }
 
 </style>
@@ -125,15 +204,17 @@ Joey walked into the small café in Kentucky and immediately spotted Noelle and 
 </p>
 
 <p>
+
 A familiar feeling quietly tugged at Joey's heart.
+
 </p>
 
 <p>
-The desire to remain needed.
 
-The fear of distance.
-
+The desire to remain needed.<br>
+The fear of distance.<br>
 The pressure to keep everyone close.
+
 </p>
 
 <p>
@@ -141,34 +222,38 @@ Conversation flowed naturally over coffee and laughter, though Joey noticed his 
 </p>
 
 <p>
+
 Questions silently followed him.
+
 </p>
 
-<p>
-Are people pulling away?
+<div class="quote">
 
-Am I losing connection?
+Are people pulling away?<br><br>
+
+Am I losing connection?<br><br>
 
 Why does change feel so heavy?
-</p>
 
-<p>
-Noelle noticed his expression and leaned forward.
+</div>
+
+<div class="quote">
 
 "Joey, you've been quiet."
-</p>
 
-<p>
-Joey sighed.
+</div>
+
+<div class="quote">
 
 "I feel like I hold onto people too tightly. When life changes, I feel like I am losing them."
-</p>
 
-<p>
-Dallas nodded.
+</div>
+
+<div class="quote">
 
 "You love deeply, Joey. Nothing wrong with loving deeply. Yet love also learns trust."
-</p>
+
+</div>
 
 <div class="quote">
 
@@ -181,27 +266,39 @@ John 14:1
 </div>
 
 <p>
+
 Those words followed Joey once again.
+
 </p>
 
 <p>
-Later that evening, Joey sat quietly beneath the fading sky and prayed.
+Later that evening Joey sat quietly beneath the fading sky and prayed:
+</p>
+
+<div class="quote">
 
 "Jesus, help me release fear. Help me release anxiety. Help me trust You."
-</p>
+
+</div>
 
 <p>
+
 Warm peace quietly settled over him.
+
 </p>
 
 <p>
+
 Joey finally understood something important.
+
 </p>
 
 <p>
-Peace was never the absence of storms.
+
+Peace was never the absence of storms.<br><br>
 
 Peace was the presence of Jesus.
+
 </p>
 
 <div class="footer">
