@@ -26,6 +26,7 @@ box-sizing:border-box;
 --soft:#faf6f1;
 --text:#3f3428;
 --button:#6f5845;
+--line:#d9c6b0;
 
 }
 
@@ -33,44 +34,37 @@ body{
 font-family:Georgia,serif;
 background:var(--bg);
 color:var(--text);
-line-height:1.8;
-}
-
-.top-banner{
-
-width:100%;
-overflow:hidden;
-
+line-height:1.7;
 }
 
 .top-banner img{
 
 width:100%;
 display:block;
-max-height:650px;
+max-height:560px;
 object-fit:cover;
 
 }
 
 .hero{
 
-padding:70px 30px;
+padding:45px 25px 25px;
 
 }
 
 .hero-content{
 
-max-width:900px;
+max-width:850px;
 margin:auto;
 
 background:var(--card);
 
-padding:55px;
+padding:40px;
 
 border-radius:20px;
 
 box-shadow:
-0 8px 30px rgba(0,0,0,.08);
+0 6px 20px rgba(0,0,0,.08);
 
 text-align:center;
 
@@ -78,16 +72,27 @@ text-align:center;
 
 .hero h1{
 
-font-size:3rem;
-margin-bottom:25px;
+font-size:2.5rem;
+margin-bottom:18px;
 
 }
 
 .hero p{
 
-font-size:1.1rem;
+font-size:1.05rem;
 
-margin-bottom:28px;
+margin-bottom:18px;
+
+}
+
+.divider{
+
+width:80px;
+height:2px;
+
+background:var(--line);
+
+margin:25px auto;
 
 }
 
@@ -95,7 +100,7 @@ margin-bottom:28px;
 
 display:inline-block;
 
-padding:16px 34px;
+padding:14px 28px;
 
 background:var(--button);
 
@@ -103,31 +108,21 @@ color:white;
 
 text-decoration:none;
 
-border-radius:35px;
+border-radius:30px;
 
-font-weight:bold;
-
-transition:.3s;
-
-margin-top:10px;
-
-}
-
-.button:hover{
-
-transform:translateY(-3px);
+margin-top:8px;
 
 }
 
 .section{
 
-padding:0 30px 90px;
+padding:10px 25px 50px;
 
 }
 
 .container{
 
-max-width:1000px;
+max-width:900px;
 margin:auto;
 
 }
@@ -136,17 +131,17 @@ margin:auto;
 
 text-align:center;
 
-font-size:1.3rem;
+font-size:1.15rem;
 
 font-style:italic;
 
-padding:40px;
+padding:28px;
 
 background:var(--soft);
 
 border-radius:16px;
 
-margin-top:35px;
+margin-top:18px;
 
 }
 
@@ -154,20 +149,21 @@ margin-top:35px;
 
 background:var(--card);
 
-padding:40px;
+padding:35px;
 
 border-radius:20px;
 
-margin-top:35px;
+margin-top:20px;
 
 box-shadow:
-0 8px 30px rgba(0,0,0,.08);
+0 6px 20px rgba(0,0,0,.08);
 
 }
 
 .card h2{
 
-margin-bottom:20px;
+text-align:center;
+margin-bottom:18px;
 
 }
 
@@ -178,12 +174,12 @@ display:grid;
 grid-template-columns:
 repeat(
 auto-fit,
-minmax(220px,1fr)
+minmax(180px,1fr)
 );
 
-gap:20px;
+gap:14px;
 
-margin-top:40px;
+margin-top:20px;
 
 }
 
@@ -191,9 +187,9 @@ margin-top:40px;
 
 background:var(--soft);
 
-padding:30px;
+padding:20px;
 
-border-radius:16px;
+border-radius:14px;
 
 text-align:center;
 
@@ -203,7 +199,7 @@ transition:.3s;
 
 .link-card:hover{
 
-transform:translateY(-5px);
+transform:translateY(-3px);
 
 }
 
@@ -213,17 +209,15 @@ text-decoration:none;
 
 color:var(--text);
 
-display:block;
-
-font-size:1.1rem;
-
 font-weight:bold;
+
+display:block;
 
 }
 
 .footer{
 
-padding:50px;
+padding:30px;
 
 text-align:center;
 
@@ -235,21 +229,27 @@ opacity:.75;
 
 @media(max-width:768px){
 
-.hero h1{
+.hero{
 
-font-size:2.3rem;
+padding:25px 18px;
 
 }
 
 .hero-content{
 
-padding:35px;
+padding:28px;
+
+}
+
+.hero h1{
+
+font-size:2rem;
 
 }
 
 .top-banner img{
 
-max-height:420px;
+max-height:350px;
 
 }
 
@@ -264,7 +264,7 @@ max-height:420px;
 
 <img
 src="361319A1-0A5E-4708-B056-17D4910DE057.png"
-alt="Joey's Journey Banner">
+alt="Joey's Journey">
 
 </section>
 
@@ -278,15 +278,17 @@ Welcome
 
 </h1>
 
+<div class="divider"></div>
+
 <p>
 
-Some hearts quietly carry more than anyone realizes. Joey loved deeply, cared deeply, and eventually found himself worn down by changing seasons, uncertainty, and the fear of losing connection.
+Some hearts quietly carry more than anyone realizes. Joey cared deeply and slowly found himself overwhelmed by shifting seasons, uncertainty, and the fear of losing meaningful connections.
 
 </p>
 
 <p>
 
-Unexpected moments, genuine friendships, and encounters with Jesus slowly opened another way forward. A place where trust grows, burdens become lighter, and rest begins returning to the soul.
+Unexpected moments, genuine friendships, and encounters with Jesus began revealing a different path. Rest slowly returned where pressure once lived.
 
 </p>
 
@@ -316,6 +318,8 @@ John 14:1
 
 </div>
 
+<div class="divider"></div>
+
 <div class="card">
 
 <h2>
@@ -324,15 +328,17 @@ Inside These Pages
 
 </h2>
 
+<div class="divider"></div>
+
 <p>
 
-Distance, uncertainty, friendship, and quiet struggles often shape lives in ways few people notice. Joey discovers that caring deeply does not require carrying every burden alone.
+Distance, uncertainty, friendship, and hidden struggles shape lives in ways people rarely see. Joey learns that caring deeply does not mean carrying every burden.
 
 </p>
 
 <p>
 
-Each chapter moves toward a reminder that strength sometimes looks like releasing fear and allowing Jesus to hold what human hands never could.
+Each chapter points toward trust, surrender, and discovering peace in the presence of Jesus.
 
 </p>
 
@@ -341,43 +347,27 @@ Each chapter moves toward a reminder that strength sometimes looks like releasin
 <div class="links">
 
 <div class="link-card">
-
 <a href="introduction.html">
-
 Introduction
-
 </a>
-
 </div>
 
 <div class="link-card">
-
 <a href="contents.html">
-
 Contents
-
 </a>
-
 </div>
 
 <div class="link-card">
-
 <a href="prayer.html">
-
 Prayer
-
 </a>
-
 </div>
 
 <div class="link-card">
-
 <a href="author.html">
-
 About the Author
-
 </a>
-
 </div>
 
 </div>
