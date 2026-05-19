@@ -19,118 +19,234 @@ padding:0;
 box-sizing:border-box;
 }
 
+:root{
+
+--bg:#f6efe7;
+--card:#ffffff;
+--soft:#faf6f1;
+--text:#3f3428;
+--line:#d9c6b0;
+--button:#6f5845;
+
+}
+
 body{
+
 font-family:Georgia,serif;
-background:#f6efe7;
-color:#3f3428;
-line-height:1.9;
-padding:40px 20px;
+background:var(--bg);
+color:var(--text);
+
+line-height:1.75;
+
+padding:25px 18px;
+
 }
 
 .container{
-max-width:900px;
+
+max-width:850px;
+
 margin:auto;
+
 background:white;
-padding:60px;
+
+padding:35px;
+
 border-radius:20px;
-box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+box-shadow:
+0 6px 20px rgba(0,0,0,.08);
+
 }
 
 h1{
+
 text-align:center;
-font-size:3rem;
-margin-bottom:15px;
+
+font-size:2.7rem;
+
+margin-bottom:8px;
+
 }
 
 .subtitle{
+
 text-align:center;
+
 font-style:italic;
+
 opacity:.8;
-margin-bottom:50px;
+
+margin-bottom:18px;
+
+}
+
+.divider{
+
+width:80px;
+height:2px;
+
+background:var(--line);
+
+margin:18px auto;
+
 }
 
 .quote{
+
 text-align:center;
+
 font-style:italic;
-font-size:1.2rem;
-padding:30px;
-background:#faf6f1;
+
+font-size:1.05rem;
+
+padding:24px;
+
+background:var(--soft);
+
 border-radius:12px;
-margin-bottom:50px;
+
+margin-bottom:20px;
+
 }
 
 p{
-margin-bottom:25px;
-font-size:1.08rem;
+
+margin-bottom:18px;
+
+font-size:1.04rem;
+
 }
 
 .scripture{
-margin-top:50px;
-padding:25px;
-background:#faf6f1;
-border-left:4px solid #d2b48c;
+
+padding:20px;
+
+background:var(--soft);
+
+border-left:4px solid var(--line);
+
 border-radius:12px;
+
+margin:18px 0;
+
+}
+
+.closing{
+
+text-align:center;
+
+font-size:1.2rem;
+
+font-style:italic;
+
+margin-top:18px;
+
 }
 
 .navigation{
-margin-top:50px;
+
+margin-top:25px;
+
 display:flex;
+
 justify-content:space-between;
+
+gap:10px;
+
 }
 
 .navigation a{
+
 text-decoration:none;
+
 color:white;
-background:#6f5845;
-padding:12px 24px;
+
+background:var(--button);
+
+padding:12px 22px;
+
 border-radius:30px;
-transition:.3s;
+
 }
 
-.navigation a:hover{
-opacity:.85;
+@media(max-width:768px){
+
+.container{
+
+padding:25px;
+
+}
+
+h1{
+
+font-size:2.2rem;
+
+}
+
 }
 
 </style>
 </head>
+
 <body>
 
 <div class="container">
 
 <h1>
+
 Introduction
+
 </h1>
 
 <p class="subtitle">
+
 Let Not Your Heart Be Troubled<br>
-Joey’s Journey<br>
+Joey's Journey<br>
 Bradley Hobbs
+
 </p>
+
+<div class="divider"></div>
 
 <div class="quote">
 
-“Peace is not found by holding tighter. Peace is found by trusting deeper.”
+"Peace is not found by holding tighter. Peace is found by trusting deeper."
 
 </div>
 
+<div class="divider"></div>
+
 <p>
-Life has a way of placing unexpected weight upon the heart. Relationships change. People move in different directions. Seasons shift. Distance grows. Questions appear where certainty once lived. Many people know what it feels like to hold tightly to those they love while silently carrying the fear of losing connection.
+
+Life has a way of placing unexpected weight upon the heart. Relationships change. People move in different directions. Seasons shift. Distance grows. Questions appear where certainty once lived. Many people understand the feeling of holding tightly to those they love while quietly carrying fear.
+
 </p>
 
 <p>
-Joey's journey begins in a place many hearts understand. Deep care for people slowly becomes emotional exhaustion. Love becomes mixed with fear. The desire to remain close begins turning into pressure, anxiety, and an overwhelming need to keep everything together.
+
+Joey's story begins where many hearts have stood before. Deep care slowly becomes emotional exhaustion. Love becomes tangled with pressure, anxiety, and the exhausting need to keep everything together.
+
 </p>
 
 <p>
-Through friendships, difficult emotions, unexpected moments, and encounters with the presence of Jesus, Joey begins discovering a truth that changes everything. Peace does not come from controlling relationships. Peace comes from surrendering hearts, fears, and loved ones into the hands of Jesus.
+
+Friendships, difficult emotions, unexpected moments, and encounters with Jesus begin revealing a truth that changes everything. Peace does not come from controlling relationships. Peace grows through surrender.
+
 </p>
 
 <p>
-This story was written for every person who has carried burdens longer than necessary. Every person who has feared distance, change, or loss. Every person who has felt emotionally tired from trying to hold everything together.
+
+These pages were written for those who have carried burdens too long, feared change, or quietly grown tired while trying to keep life from falling apart.
+
 </p>
 
+<div class="divider"></div>
+
 <p>
+
 Throughout these pages, one Scripture remains close:
+
 </p>
 
 <div class="scripture">
@@ -143,26 +259,32 @@ John 14:1
 
 </div>
 
-<p>
-Jesus never promised a life without change. Jesus promised His presence in every season. Joey's journey is not merely a story about friendship. Joey's journey is about learning to rest, surrender, trust, and discover that true peace is found in Him.
-</p>
+<div class="divider"></div>
 
 <p>
-May these pages gently remind your heart of one truth:
+
+Jesus never promised a life without shifting seasons. Jesus promised His presence. Joey's journey explores rest, surrender, faith, and discovering peace found only in Him.
+
 </p>
 
-<p style="text-align:center;font-size:1.3rem;font-style:italic;margin-top:30px;">
+<div class="closing">
+
 Let not your heart be troubled.
-</p>
+
+</div>
 
 <div class="navigation">
 
 <a href="contents.html">
+
 ← Contents
+
 </a>
 
 <a href="chapter1.html">
+
 Chapter One →
+
 </a>
 
 </div>
