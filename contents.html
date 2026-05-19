@@ -19,116 +19,236 @@ padding:0;
 box-sizing:border-box;
 }
 
+:root{
+
+--bg:#f6efe7;
+--card:#ffffff;
+--soft:#faf6f1;
+--text:#3f3428;
+--line:#d9c6b0;
+--button:#6f5845;
+
+}
+
 body{
+
 font-family:Georgia,serif;
-background:#f6efe7;
-color:#3f3428;
-line-height:1.8;
-padding:40px 20px;
+background:var(--bg);
+color:var(--text);
+line-height:1.7;
+
+padding:25px 18px;
+
 }
 
 .container{
-max-width:900px;
+
+max-width:850px;
+
 margin:auto;
+
 background:white;
-padding:50px;
+
+padding:35px;
+
 border-radius:20px;
-box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+box-shadow:
+0 6px 20px rgba(0,0,0,.08);
+
 }
 
 h1{
+
 text-align:center;
-font-size:3rem;
-margin-bottom:10px;
+
+font-size:2.7rem;
+
+margin-bottom:8px;
+
 }
 
 .subtitle{
+
 text-align:center;
+
 font-style:italic;
-margin-bottom:40px;
+
 opacity:.8;
+
+margin-bottom:18px;
+
+}
+
+.divider{
+
+width:80px;
+height:2px;
+
+background:var(--line);
+
+margin:18px auto;
+
 }
 
 .scripture{
+
 text-align:center;
-margin-bottom:50px;
-font-size:1.1rem;
-padding:25px;
-background:#faf6f1;
+
+font-size:1rem;
+
+padding:20px;
+
+background:var(--soft);
+
 border-radius:12px;
+
+margin-bottom:18px;
+
 }
 
 .contents-title{
-font-size:2rem;
-margin-bottom:25px;
-border-bottom:1px solid #ddd;
-padding-bottom:10px;
+
+font-size:1.8rem;
+
+text-align:center;
+
+margin-bottom:18px;
+
 }
 
 .chapter{
-padding:18px;
-margin-bottom:15px;
+
+padding:15px 18px;
+
+margin-bottom:10px;
+
 background:#faf7f3;
+
 border-radius:12px;
+
 transition:.3s;
+
+border-left:
+4px solid var(--line);
+
 }
 
 .chapter:hover{
-transform:translateY(-3px);
+
+transform:translateY(-2px);
+
 }
 
 .chapter a{
+
 text-decoration:none;
-color:#3f3428;
+
+color:var(--text);
+
 display:block;
+
 }
 
 .number{
-font-size:.9rem;
+
+font-size:.8rem;
+
 letter-spacing:2px;
+
 opacity:.7;
+
+margin-bottom:4px;
+
 }
 
 .chapter-title{
-font-size:1.5rem;
-margin-top:5px;
+
+font-size:1.25rem;
+
 }
 
 .footer{
+
 text-align:center;
-margin-top:50px;
-opacity:.7;
+
+margin-top:25px;
+
+opacity:.75;
+
 font-style:italic;
+
 }
 
 .navigation{
-margin-top:50px;
+
+margin-top:25px;
+
 display:flex;
+
 justify-content:space-between;
+
+gap:10px;
+
 }
 
 .navigation a{
+
 text-decoration:none;
+
 color:white;
-background:#6f5845;
-padding:12px 24px;
+
+background:var(--button);
+
+padding:12px 22px;
+
 border-radius:30px;
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+padding:25px;
+
+}
+
+h1{
+
+font-size:2.2rem;
+
+}
+
+.chapter-title{
+
+font-size:1.1rem;
+
+}
+
 }
 
 </style>
 </head>
+
 <body>
 
 <div class="container">
 
 <h1>
+
 Let Not Your Heart Be Troubled
+
 </h1>
 
 <p class="subtitle">
-Joey’s Journey<br>
+
+Joey's Journey<br>
 Bradley Hobbs
+
 </p>
+
+<div class="divider"></div>
 
 <div class="scripture">
 
@@ -140,85 +260,73 @@ John 14:1
 
 </div>
 
+<div class="divider"></div>
+
 <h2 class="contents-title">
+
 Contents
+
 </h2>
 
 <div class="chapter">
 <a href="introduction.html">
 <div class="number">BEGIN HERE</div>
-<div class="chapter-title">
-Introduction
-</div>
+<div class="chapter-title">Introduction</div>
 </a>
 </div>
 
 <div class="chapter">
 <a href="chapter1.html">
 <div class="number">CHAPTER ONE</div>
-<div class="chapter-title">
-When the Heart Holds On
-</div>
+<div class="chapter-title">When the Heart Holds On</div>
 </a>
 </div>
 
 <div class="chapter">
 <a href="chapter2.html">
 <div class="number">CHAPTER TWO</div>
-<div class="chapter-title">
-Tides of Trust
-</div>
+<div class="chapter-title">Tides of Trust</div>
 </a>
 </div>
 
 <div class="chapter">
 <a href="chapter3.html">
 <div class="number">CHAPTER THREE</div>
-<div class="chapter-title">
-Shadows and Light
-</div>
+<div class="chapter-title">Shadows and Light</div>
 </a>
 </div>
 
 <div class="chapter">
 <a href="chapter4.html">
 <div class="number">CHAPTER FOUR</div>
-<div class="chapter-title">
-Crossing the Distance
-</div>
+<div class="chapter-title">Crossing the Distance</div>
 </a>
 </div>
 
 <div class="chapter">
 <a href="chapter5.html">
 <div class="number">CHAPTER FIVE</div>
-<div class="chapter-title">
-Anchored in Peace
-</div>
+<div class="chapter-title">Anchored in Peace</div>
 </a>
 </div>
 
 <div class="chapter">
 <a href="prayer.html">
 <div class="number">CLOSING</div>
-<div class="chapter-title">
-Prayer of Trust
-</div>
+<div class="chapter-title">Prayer of Trust</div>
 </a>
 </div>
 
 <div class="chapter">
 <a href="author.html">
 <div class="number">FINAL PAGE</div>
-<div class="chapter-title">
-About the Author
-</div>
+<div class="chapter-title">About the Author</div>
 </a>
 </div>
 
 <div class="footer">
 
-Peace is not found by holding tighter. Peace is found by trusting deeper.
+Some friendships stay beside you. Some remind you of Jesus.
 
 </div>
 
